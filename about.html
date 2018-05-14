@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Shopping">
+  <meta name="keywords" content="Moor Nook Convenience Store">
+  <meta name="Author" content="Schmyle Ellahi">
+  <title>Moor Nook Convenience Store | Welcome</title>
+  <link rel="stylesheet" href="./css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("p").toggle();
+    });
+}); // button function which allows the user to toggle the information that is hiden by clicking on it to show and then clicking again to hide this....SE
+
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});   // table function used to find certain persons address, contact number and email address.....SE
+
+
+</script>
+
+<style>
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+
+</style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div id="branding">
+        <h1><span class="highlight">Moor Nook</span> Convenience Store</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="current" ><a href="about.html">Contact</a></li>
+          <li><a href="Timetable.html">Shopping</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section id="main">
+    <div class="container">
+      <article id="main-col">
+        <h1 class="page-title">Contact Us</h1>
+
+        
+
+        <h3>Moor Nook Convenience Store</h3>
+        <button>Contact Details</button> <!-- button used to link in with jquery toggle- show and hide the contact details of the company...SE-->
+        <p>54 Pope Lane</p>
+        <p>PR2 6JN</p>
+        <p>Preston</p>
+        <p>Lancashire</p>
+        <p>United Kingdom</p>
+        <br>
+
+        </br>
+<br>
+
+
+       <p>Email Address: <a href="mailto:sellahi97@gmail.com">
+        ilyasahmed1974@gmail.com</a> <!---->
+        <p>
+          Contact Number: <a href= "call:07522244826"> 07522244826</a> <!---->
+        </p>
+</br>
+      </article>
+<input id="myInput" type="text" placeholder="Search..">
+    <table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Contact Number</th>
+      <th>Address</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody id="myTable">
+    <tr>
+      <td>Ellahi</td>
+      <td>07522244826</td>
+      <td>200 Fox Street</td>
+      <td>schmyle@gmail.com</td>
+    </tr>
+    <tr>
+      <td>Schmyle</td>
+      <td>01772888555</td>
+      <td>10 Stuart Street</td>
+      <td>sellahi97@hotmail.com</td>
+    </tr>
+    <tr>
+      <td>Assad</td>
+      <td>07777888521</td>
+      <td>78 Fishwick Parade</td>
+      <td>SEllahi2@uclan.ac.uk</td>
+    </tr>
+  </tbody>
+</table>
+
+      <aside id="sidebar">
+        <div class="dark">
+        <h3>Where we Are</h3>
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2357.8884316170493!2d-2.654298283794773!3d53.77367348007087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b73c9cce642f7%3A0x100826fc19de5573!2s54+Pope+Ln%2C+Preston+PR2+6JN!5e0!3m2!1sen!2suk!4v1521495924561" width="650" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </aside> <!---->
+    </div>
+  </section>
+  <footer>
+    <p>Moor Nook Convenience Copyright &copy; 2018</p>
+    </p>
+  </footer>
+</body>
+</html>
